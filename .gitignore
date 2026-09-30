@@ -19,8 +19,10 @@ dist/
 /PARALLAX_DATA/
 /results/
 
-# Separate frontend project is intentionally not part of this repository
-/frontend/
+# Frontend dependencies and build outputs
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
 
 # Local configuration and secrets
 .env
