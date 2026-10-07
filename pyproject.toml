@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "parallex"
+version = "0.1.0"
+description = "Cross-Instrument Lunar Correspondence Registration Framework (OHRC, TMC-2, IIRS)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+    "numpy",
+    "scipy",
+    "opencv-python-headless",
+    "pandas",
+    "scikit-image",
+    "scikit-learn",
+    "torch",
+    "torchvision",
+    "kornia",
+    "Pillow",
+    "matplotlib",
+    "lxml",
+    "pds4_tools",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "httpx",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = ["src"]

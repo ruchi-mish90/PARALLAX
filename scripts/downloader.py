@@ -14,7 +14,7 @@ import requests
 import browser_cookie3
 
 
-PROJECT = Path(__file__).resolve().parent
+PROJECT = Path(__file__).resolve().parent.parent
 
 MANIFEST = Path(
     r"C:\Users\graj6\Downloads\parallax_results\parallax_results"

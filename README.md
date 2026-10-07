@@ -281,14 +281,18 @@ PARALLAX/
 │   ├── spatial/             # Spatial validation
 │   ├── validation/          # Tests and validation
 │   └── pipeline/            # Pipeline orchestration
+├── frontend/                # Interactive web UI (Vite + React + TypeScript)
 ├── data/
 │   └── preprocessed/        # Persistent preprocessing runs
-├── scripts/                 # Development and experiment scripts
+├── scripts/                 # Development, experiment, and utility scripts
 ├── tests/                   # Automated tests
+├── .github/workflows/       # GitHub Actions CI workflows
+├── pyproject.toml           # Project metadata, build configuration & pytest config
 ├── requirements.txt
 ├── requirements-dev.txt
 ├── Dockerfile
 ├── docker-compose.yml
+├── LICENSE
 └── README.md
 ```
 

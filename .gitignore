@@ -34,3 +34,6 @@ frontend/.env.local
 .idea/
 .DS_Store
 Thumbs.db
+# Dev artifacts
+P001_files.txt
+backend_tree.txt

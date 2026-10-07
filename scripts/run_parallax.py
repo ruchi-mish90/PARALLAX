@@ -8,7 +8,7 @@ from pathlib import Path
 
 import numpy as np
 
-ROOT = Path(r"C:\Users\graj6\Downloads\parallex")
+ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "src"
 
 if str(SRC) not in sys.path:
